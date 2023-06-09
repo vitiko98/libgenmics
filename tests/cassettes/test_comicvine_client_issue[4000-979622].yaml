@@ -1,0 +1,108 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - comicvine.py
+    method: GET
+    uri: https://comicvine.gamespot.com/api/issue/4000-979622/?format=json
+  response:
+    body:
+      string: '{"error":"OK","limit":1,"offset":0,"number_of_page_results":1,"number_of_total_results":1,"status_code":1,"results":{"aliases":null,"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/issue\/4000-979622\/","associated_images":[],"character_credits":[],"character_died_in":[],"concept_credits":[],"cover_date":"2023-06-01","date_added":"2023-03-28
+        06:51:22","date_last_updated":"2023-03-28 06:51:43","deck":null,"description":null,"first_appearance_characters":null,"first_appearance_concepts":null,"first_appearance_locations":null,"first_appearance_objects":null,"first_appearance_storyarcs":null,"first_appearance_teams":null,"has_staff_review":false,"id":979622,"image":{"icon_url":"https:\/\/comicvine.gamespot.com\/a\/uploads\/square_avatar\/11161\/111610434\/8882965-2682544086-Anima.jpg","medium_url":"https:\/\/comicvine.gamespot.com\/a\/uploads\/scale_medium\/11161\/111610434\/8882965-2682544086-Anima.jpg","screen_url":"https:\/\/comicvine.gamespot.com\/a\/uploads\/screen_medium\/11161\/111610434\/8882965-2682544086-Anima.jpg","screen_large_url":"https:\/\/comicvine.gamespot.com\/a\/uploads\/screen_kubrick\/11161\/111610434\/8882965-2682544086-Anima.jpg","small_url":"https:\/\/comicvine.gamespot.com\/a\/uploads\/scale_small\/11161\/111610434\/8882965-2682544086-Anima.jpg","super_url":"https:\/\/comicvine.gamespot.com\/a\/uploads\/scale_large\/11161\/111610434\/8882965-2682544086-Anima.jpg","thumb_url":"https:\/\/comicvine.gamespot.com\/a\/uploads\/scale_avatar\/11161\/111610434\/8882965-2682544086-Anima.jpg","tiny_url":"https:\/\/comicvine.gamespot.com\/a\/uploads\/square_mini\/11161\/111610434\/8882965-2682544086-Anima.jpg","original_url":"https:\/\/comicvine.gamespot.com\/a\/uploads\/original\/11161\/111610434\/8882965-2682544086-Anima.jpg","image_tags":"All
+        Images"},"issue_number":"4","location_credits":[],"name":"Vol. 4","object_credits":[],"person_credits":[{"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/person\/4040-118816\/","id":118816,"name":"Kokonasu\u2606Rumba","site_detail_url":"https:\/\/comicvine.gamespot.com\/kokonasurumba\/4040-118816\/","role":"writer,
+        artist, cover"}],"site_detail_url":"https:\/\/comicvine.gamespot.com\/animal-crossing-new-horizons-le-journal-de-lile-4-\/4000-979622\/","store_date":"2023-06-07","story_arc_credits":[],"team_credits":[],"team_disbanded_in":[],"volume":{"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/volume\/4050-146171\/","id":146171,"name":"Animal
+        Crossing : New Horizons - Le Journal de l''\u00eele","site_detail_url":"https:\/\/comicvine.gamespot.com\/animal-crossing-new-horizons-le-journal-de-lile\/4050-146171\/"}},"version":"1.0"}'
+    headers:
+      Cache-Control:
+      - max-age=0, must-revalidate, private
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2649'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 07 Jun 2023 07:13:46 GMT
+      Expires:
+      - Wed, 07 Jun 2023 07:13:46 GMT
+      Set-Cookie:
+      - device_view=full; expires=Fri, 07-Jul-2023 07:13:46 GMT; Max-Age=2592000;
+        path=/; httponly
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+      X-Timer:
+      - S1686122026.315971,VS0,VE487
+      accept-ranges:
+      - bytes
+      referrer-policy:
+      - no-referrer-when-downgrade
+      vary:
+      - Accept-Encoding, User-Agent
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - device_view=full
+      User-Agent:
+      - comicvine.py
+    method: GET
+    uri: https://comicvine.gamespot.com/api/volume/4050-146171/?format=json
+  response:
+    body:
+      string: '{"error":"OK","limit":1,"offset":0,"number_of_page_results":1,"number_of_total_results":1,"status_code":1,"results":{"aliases":null,"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/volume\/4050-146171\/","concepts":[{"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/concept\/4015-55808\/","id":55808,"name":"Video
+        Game Tie-In","site_detail_url":"https:\/\/comicvine.gamespot.com\/video-game-tie-in\/4015-55808\/","count":"2"}],"count_of_issues":4,"date_added":"2022-11-16
+        04:59:46","date_last_updated":"2022-11-16 05:01:27","deck":null,"description":"<p>French
+        translation of the japanese manga <a href=\"\/atsumare-doubutsu-no-mori-mujintou-diary\/4050-146158\/\"
+        data-ref-id=\"4050-146158\">Atsumare Doubutsu no Mori ~Mujintou Diary~<\/a>
+        (\u3042\u3064\u307e\u308c \u3069\u3046\u3076\u3064\u306e\u68ee ~\u7121\u4eba\u5cf6Diary~).<\/p>","first_issue":{"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/issue\/4000-955403\/","id":955403,"name":"Vol.
+        1","issue_number":"1"},"id":146171,"image":{"icon_url":"https:\/\/comicvine.gamespot.com\/a\/uploads\/square_avatar\/11161\/111610434\/8722132-3289852004-Anima.jpg","medium_url":"https:\/\/comicvine.gamespot.com\/a\/uploads\/scale_medium\/11161\/111610434\/8722132-3289852004-Anima.jpg","screen_url":"https:\/\/comicvine.gamespot.com\/a\/uploads\/screen_medium\/11161\/111610434\/8722132-3289852004-Anima.jpg","screen_large_url":"https:\/\/comicvine.gamespot.com\/a\/uploads\/screen_kubrick\/11161\/111610434\/8722132-3289852004-Anima.jpg","small_url":"https:\/\/comicvine.gamespot.com\/a\/uploads\/scale_small\/11161\/111610434\/8722132-3289852004-Anima.jpg","super_url":"https:\/\/comicvine.gamespot.com\/a\/uploads\/scale_large\/11161\/111610434\/8722132-3289852004-Anima.jpg","thumb_url":"https:\/\/comicvine.gamespot.com\/a\/uploads\/scale_avatar\/11161\/111610434\/8722132-3289852004-Anima.jpg","tiny_url":"https:\/\/comicvine.gamespot.com\/a\/uploads\/square_mini\/11161\/111610434\/8722132-3289852004-Anima.jpg","original_url":"https:\/\/comicvine.gamespot.com\/a\/uploads\/original\/11161\/111610434\/8722132-3289852004-Anima.jpg","image_tags":"All
+        Images"},"issues":[{"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/issue\/4000-955403\/","id":955403,"name":"Vol.
+        1","site_detail_url":"https:\/\/comicvine.gamespot.com\/animal-crossing-new-horizons-le-journal-de-lile-1-\/4000-955403\/","issue_number":"1"},{"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/issue\/4000-955404\/","id":955404,"name":"Vol.
+        2","site_detail_url":"https:\/\/comicvine.gamespot.com\/animal-crossing-new-horizons-le-journal-de-lile-2-\/4000-955404\/","issue_number":"2"},{"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/issue\/4000-979621\/","id":979621,"name":"Vol.
+        3","site_detail_url":"https:\/\/comicvine.gamespot.com\/animal-crossing-new-horizons-le-journal-de-lile-3-\/4000-979621\/","issue_number":"3"},{"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/issue\/4000-979622\/","id":979622,"name":"Vol.
+        4","site_detail_url":"https:\/\/comicvine.gamespot.com\/animal-crossing-new-horizons-le-journal-de-lile-4-\/4000-979622\/","issue_number":"4"}],"last_issue":{"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/issue\/4000-979622\/","id":979622,"name":"Vol.
+        4","issue_number":"4"},"name":"Animal Crossing : New Horizons - Le Journal
+        de l''\u00eele","people":[{"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/person\/4040-118816\/","id":118816,"name":"Kokonasu\u2606Rumba","site_detail_url":"https:\/\/comicvine.gamespot.com\/kokonasurumba\/4040-118816\/","count":"4"}],"publisher":{"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/publisher\/4010-2000\/","id":2000,"name":"Soleil"},"site_detail_url":"https:\/\/comicvine.gamespot.com\/animal-crossing-new-horizons-le-journal-de-lile\/4050-146171\/","start_year":"2022"},"version":"1.0"}'
+    headers:
+      Cache-Control:
+      - max-age=0, must-revalidate, private
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '3855'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 07 Jun 2023 07:13:47 GMT
+      Expires:
+      - Wed, 07 Jun 2023 07:13:47 GMT
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+      X-Timer:
+      - S1686122027.933918,VS0,VE285
+      accept-ranges:
+      - bytes
+      referrer-policy:
+      - no-referrer-when-downgrade
+      vary:
+      - Accept-Encoding, User-Agent
+    status:
+      code: 200
+      message: OK
+version: 1

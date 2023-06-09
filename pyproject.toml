@@ -1,0 +1,30 @@
+[project]
+name = "libgenmics"
+version = "0.1.0"
+description = "Comics toolkit"
+readme = "README.md"
+requires-python = ">=3.7"
+authors = [
+    { name = "Vitiko Nogales", email = "averroista@protonmail.com" }
+]
+
+dependencies = [
+    "requests",
+    "pydantic",
+    "beautifulsoup4",
+    "rarfile"
+]
+
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Build Tools",
+	"License :: OSI Approved :: GPL-3.0 License",
+]
+
+
+[tool.isort]
+profile = "google"
+
+[tool.pytest.ini_options]
+addopts = "--log-cli-level=debug -x -s"
