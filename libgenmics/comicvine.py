@@ -49,7 +49,7 @@ class ComicIssue(BaseModel):
     aliases: Optional[str] = None
     api_detail_url: str
     character_credits: List[Relationship]
-    concept_credits: List[str]
+    #    concept_credits: List[str]
     cover_date: Optional[str] = None
     date_added: Optional[str] = None
     description: Optional[str] = None
@@ -60,9 +60,7 @@ class ComicIssue(BaseModel):
     person_credits: List[PersonCredit]
     site_detail_url: str = ""
     store_date: Optional[str]
-    story_arc_credits: List[str]
     team_credits: List[Relationship]
-    team_disbanded_in: List[str]
     volume: Relationship
     volume_fetched: Optional[ComicVolume]
 
