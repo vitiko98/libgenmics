@@ -40,6 +40,21 @@ class ComicFile(BaseModel):
     size: str
     issue: str
 
+    @property
+    def bytes(self):
+        try:
+            value, mb = [i.strip() for i in self.size.split()]
+        except ValueError:
+            return 0
+
+        if mb != "MB":
+            return 0
+
+        try:
+            return int(float(value) * 1024 * 1024)
+        except ValueError:
+            return 0
+
 
 class Client:
     def __init__(

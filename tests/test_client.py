@@ -1,8 +1,25 @@
-import os
-
 import pytest
 
 from libgenmics.client import Client
+from libgenmics.client import ComicFile
+
+
+@pytest.mark.parametrize("size_str", ["27 MB", "Unknown"])
+def test_client_comicfile_size(size_str):
+    file_ = ComicFile(
+        title="foo",
+        path="foo",
+        author="foo",
+        publisher="foo",
+        year="foo",
+        language="foo",
+        pages="foo",
+        ext="foo",
+        mirrors="foo",
+        size=size_str,
+        issue="foo",
+    )
+    assert file_.bytes is not None
 
 
 @pytest.fixture(scope="module")
