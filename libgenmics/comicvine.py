@@ -106,7 +106,13 @@ class Client:
         response = self._session.get(f"{_BASE_URL}/issue/4000-{id}/", params=params)
         response.raise_for_status()
 
-        issue = ComicIssue(**response.json()["results"])
+        data = {
+            key: value
+            for key, value in response.json()["results"].items()
+            if value is not None
+        }
+
+        issue = ComicIssue(**data)
         if load_volume:
             issue.volume_fetched = self.volume(issue.volume.id)
 
