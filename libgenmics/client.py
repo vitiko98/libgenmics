@@ -36,7 +36,7 @@ class ComicFile(BaseModel):
     language: str
     pages: str
     ext: str
-    mirrors: str
+    mirrors: List[str] = []
     size: str
     issue: str
 
@@ -162,7 +162,14 @@ def _parse_comic_file(tr_):
         if n == 0:
             item.update(_parse_first_td(td))
         elif n == 8:
-            item[key] = td.select_one("a").get("href")
+            mirrors_ = []
+            for m in td.select("a"):
+                try:
+                    mirrors_.append(m.get("href"))
+                except TypeError:
+                    pass
+
+            item[key] = mirrors_
         else:
             item[key] = td.text.strip()
 

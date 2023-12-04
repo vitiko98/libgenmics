@@ -15,7 +15,7 @@ def test_client_comicfile_size(size_str):
         language="foo",
         pages="foo",
         ext="foo",
-        mirrors="foo",
+        mirrors=["foo"],
         size=size_str,
         issue="foo",
     )
