@@ -10,7 +10,7 @@ authors = [
 
 dependencies = [
     "requests",
-    "pydantic<2",
+    "pydantic",
     "beautifulsoup4",
     "rarfile"
 ]

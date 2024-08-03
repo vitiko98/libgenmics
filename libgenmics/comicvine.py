@@ -112,7 +112,7 @@ class Client:
             if value is not None
         }
 
-        issue = ComicIssue(**data)
+        issue = ComicIssue.model_validate(data)
         if load_volume:
             issue.volume_fetched = self.volume(issue.volume.id)
 
@@ -124,4 +124,4 @@ class Client:
         response = self._session.get(f"{_BASE_URL}/volume/4050-{id}/", params=params)
         response.raise_for_status()
 
-        return ComicVolume(**response.json()["results"])
+        return ComicVolume.model_validate(response.json()["results"])
